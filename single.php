@@ -8,17 +8,20 @@ the_post();
 
 
 <link rel="stylesheet" href="<?php echo $root; ?>/blog.css">
-<div class="blogs">
+<div class="blogs_single">
     <h1><?php the_title(); ?></h1>
 
     <?php the_content(); ?>
-    <p> <?php the_date(); ?> </p>
-    <p> <?php the_author(); ?> </p>
+
+    <div class="date_author">
+        <p> Published on: <span><?php the_date(); ?></span> </p>
+        <p>By <span><?php the_author(); ?> </span></p>
+    </div>
 
     <?php
     //  comment_form(); 
     comments_template();
-     ?>
+    ?>
 </div>
 
 

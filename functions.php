@@ -1,9 +1,9 @@
-<?php
+<?php 
 /* for admin panel */
 
 // create navbar 
 register_nav_menus(
-    array("primary_menu" => "Header Menu")
+    array("primary_menu"=>"Header Menu")
 );
 
 
@@ -19,6 +19,6 @@ add_theme_support("custom-header");
     *
     * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
     */
-add_theme_support('post-thumbnails');
+add_theme_support( 'post-thumbnails' );
 // set the post image size 
-set_post_thumbnail_size(500, 360);
+set_post_thumbnail_size( 500, 360 );

@@ -53,13 +53,18 @@ nav>a.logo img {
 
 ul.menu {
     display: flex;
+    margin-right: 2rem;
 }
 
-ul.menu li {
+ul.menu>li {
     list-style: none;
+    position: relative;
+    text-align: center;
 }
 
-.navbar ul li a {
+.navbar ul.menu>li a {
+    display: block;
+    width: 100%;
     color: #fff;
     font-size: 18px;
     text-decoration: none;
@@ -69,16 +74,46 @@ ul.menu li {
 
 }
 
-ul li.current_page_parent > a,ul li.current_page_item > a{
+ul.menu li.current_page_parent>a, ul li.current_page_item>a {
     background-color: black;
     color: white;
 }
 
 #active, .navbar ul li a:hover {
     background-color: #02010e;
-
-
 }
+
+/* --------------------- submenu ---   */
+ul.menu li {
+    list-style: none;
+}
+
+ul.menu li .sub-menu {
+    width: 140px;
+    padding-top: 0.1rem;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 30%);
+    transition: 0.2s;
+    display: none;
+}
+
+ul.menu>li:hover .sub-menu {
+    display: block;
+}
+
+ul.menu li .sub-menu li a {
+    color: black;
+}
+
+ul.menu li .sub-menu li a:hover {
+    color: white;
+}
+
+/* sub menu ends  */
+
 
 
 .mainbanner img {
