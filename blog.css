@@ -143,3 +143,18 @@ input[type=checkbox]{
 .date_author p span{
     font-weight: bold;
 }
+
+.sidebar{
+    border: 2px solid skyblue;
+    list-style: none;
+}
+
+.sidebar ul{
+    padding: 1rem;
+    list-style: none;
+
+}
+
+.sidebar ul li{
+    margin: 0.3rem 0rem;
+}
