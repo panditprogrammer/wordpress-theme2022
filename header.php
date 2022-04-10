@@ -11,7 +11,7 @@ $root = get_template_directory_uri();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WP Theme 2022 </title>
+    <title> <?php bloginfo('name');  wp_title(); ?>  <?php if(is_front_page()){bloginfo("description");} ?></title>
     <link rel="stylesheet" href="<?php echo $root; ?>/style.css">
     <?php wp_head(); ?>
 </head>
