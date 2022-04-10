@@ -14,13 +14,12 @@ Author URI: http://panditprogrammer.com
 
 body {
     height: 100vh;
-    background-color: #cfcfcf;
-
 }
 
 .container {
     width: 960px;
     margin: auto;
+    background-color: white;
 }
 
 nav {

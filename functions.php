@@ -32,3 +32,4 @@ register_sidebar(
 
 // create background image  in website
 add_theme_support("custom-background");
+

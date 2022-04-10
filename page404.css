@@ -1,0 +1,17 @@
+/* 404 page  */
+.page404{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 50%);
+}
+.page404 h1{
+    color: white;
+    font-size: 5rem;
+}
+.page404 h3{
+    color: red;
+
+}
