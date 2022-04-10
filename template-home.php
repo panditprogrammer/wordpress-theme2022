@@ -15,9 +15,7 @@ get_header();
     <?php
 
     $Categories = get_categories(array("taxonomy" => "category"));
-    // echo "<pre>";
-    // print_r($Categories);
-    // echo "</pre>";
+
     foreach ($Categories as $cate_value) {
     ?>
 
@@ -33,27 +31,30 @@ get_header();
     <?php
     }
     ?>
-
-
-    <!-- 
-    <div class="col">
-        <h3>ICON 1<h3>
-                <h2>Soft Development</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem asperiores quidem eius,
-                    beatae sequi error modi, eligendi temporibus, sint distinctio quae adipisci?
-                </p>
-                <a href="#">Know more</a>
-    </div>
-
-    <div class="col right">
-        <h3>ICON 1<h3>
-                <h2>App Development</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem asperiores quidem eius,beatae sequi error modi, eligendi temporibus, sint distinctio quae adipisci?
-                </p>
-                <a href="#">Know more</a>
-    </div> -->
 </section>
+<link rel="stylesheet" href="<?php echo $root; ?>/custom-post.css">
+<!-- get all custom programming post type  -->
+<div class="programming">
+    <?php
+    $args = array(
+        'post_type' => 'programming',
+        'post_status' => 'publish'
+    );
+    $loop = new WP_Query($args);
 
+    while ($loop->have_posts()) {
+        $loop->the_post();
+    ?>
+        <div class="post">
+            <h1><?php the_title(); ?></h1>
+            <?php the_post_thumbnail(); ?>
+            <p><?php the_excerpt(); ?></p>
+            <p><?php the_date(); ?></p>
+            <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+        </div>
+    <?php
+    } ?>
+</div>
 
 <div class="cussection">
     <div class="customeritems">
