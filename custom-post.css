@@ -1,10 +1,23 @@
 .programming{
     width: 960px;
     margin: auto;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programming h1{
+    padding: 1rem 0rem;
+    text-transform: uppercase;
+}
+
+.programming .post_container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+
 }
 
 .programming .post{
@@ -29,4 +42,37 @@
     text-transform: capitalize;
     text-decoration: none;
 
+}
+
+
+
+/* custom programming category css  */
+.programming_category{
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid lightgray;
+    background-color: lightskyblue;
+}
+.programming_category h1{
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.programming_category .category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.category_icon{
+    width: 100px;
+    text-align: center;
+}
+
+.programming_category .category_icon img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
