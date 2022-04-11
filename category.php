@@ -4,7 +4,7 @@ $root = get_template_directory_uri();
 get_header(); ?>
 
 
-<link rel="stylesheet" href="<?php echo $root; ?>/blog.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/blog.css">
 <div class="blogs">
 
     <?php

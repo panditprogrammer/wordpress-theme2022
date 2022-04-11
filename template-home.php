@@ -65,7 +65,7 @@ get_header();
 
 </section>
 
-<link rel="stylesheet" href="<?php echo $root; ?>/custom-post.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/custom-post.css">
 <!-- get all custom programming post type  -->
 <div class="programming">
     <h1>Latest programming posts</h1>

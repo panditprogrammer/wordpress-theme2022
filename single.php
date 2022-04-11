@@ -7,7 +7,7 @@ the_post();
 ?>
 
 
-<link rel="stylesheet" href="<?php echo $root; ?>/blog.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/blog.css">
 <div class="blogs_single">
     <h1><?php the_title(); ?></h1>
 

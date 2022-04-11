@@ -7,7 +7,7 @@ $singleCategory = get_queried_object(); //get all category details when click on
 ?>
 
 <!-- get all the posts related category  -->
-<link rel="stylesheet" href="<?php echo $root; ?>/custom-post.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/custom-post.css">
 <!-- get all custom programming post category wise  -->
 <div class="programming">
     <h1>Category:<?php echo $singleCategory->name; ?></h1>

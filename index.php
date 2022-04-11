@@ -1,13 +1,20 @@
 <?php
+// this file is used for blog menu link
 $root = get_template_directory_uri();
 
 get_header(); ?>
 
 
-<link rel="stylesheet" href="<?php echo $root; ?>/blog.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/blog.css">
 <div class="blogs">
 
     <?php
+    // when search something 
+    $searchData = "";
+    if (isset($_GET["search"]) && $_GET["search"] != "") {
+        $searchData = $_GET["search"];
+    }
+
     while (have_posts()) {
         the_post();
 

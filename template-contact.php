@@ -1,9 +1,9 @@
 <?php
-$root = get_template_directory_uri();
 // Template Name: Contact
+$root = get_template_directory_uri();
 get_header();
 ?>
-<link rel="stylesheet" href="<?php echo $root; ?>/contact.css">
+<link rel="stylesheet" href="<?php echo $root; ?>/css/contact.css">
 
 <div class="contact">
 
@@ -38,7 +38,7 @@ get_header();
     </a>
 
     <div class="map">
-        <h2>Find us here</h2>        <?php the_field('address', 12) ?>
+        <h2>Find us here</h2> <?php the_field('address', 12) ?>
     </div>
 </div>
 
